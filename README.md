@@ -1,4 +1,4 @@
-# Muhammad Fahad Hassan
+# Fahad
 
 **AI/ML Engineer** · Computer Vision · Robotics & Autonomous Systems · Medical AI
 
