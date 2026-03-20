@@ -4,13 +4,18 @@
 
 MS in AI & Autonomous Systems &nbsp;|&nbsp; Islamabad, Pakistan &nbsp;|&nbsp; muhammadfahadhassan01@gmail.com
 
-I'm an engineer who spent a year running production network infrastructure for 10,000+ users, then pivoted fully into AI. That background — real systems, real uptime requirements, real debugging under pressure — shapes how I build: I care about things that actually work, not just things that train.
+I'm an engineer who spent more than a year running production network infrastructure for 10,000+ users, then pivoted fully into AI. That background, real systems, real uptime requirements, real debugging under pressure, shapes how I build: I care about things that actually work, not just things that train.
 
-Right now I'm focused on **computer vision for healthcare** and **autonomous navigation**, with deployed projects in both areas.
+Right now I'm focused on **computer vision for healthcare**, **financial intelligence**, and **autonomous navigation**, with deployed projects in each area.
 
 ---
 
 ## Deployed Projects
+
+### 📊 FinSight AI &nbsp;·&nbsp; [Live Demo](https://huggingface.co/spaces/MFH-001/FinSight-AI) &nbsp;·&nbsp; [Repo](https://github.com/mfh-001/FinSight-AI)
+Multi-modal financial document intelligence pipeline. ColPali v1.2 indexes PDF pages as image patch embeddings (no OCR) — MaxSim retrieval finds the right page without destroying table structure. Qwen2-VL-7B-Instruct reads tables natively and extracts structured JSON. An agentic risk engine autonomously applies an 8-point financial analyst checklist. Validated on Apple Inc.'s real FY2023 10-K (107 pages, SEC EDGAR): correctly extracted $383B revenue, $97B net income, $6.13 EPS, and flagged the 2.8% revenue decline.
+
+`ColPali` `Qwen2-VL-7B` `PyTorch` `BitsAndBytes` `PyMuPDF` `SEC EDGAR` `Dual T4 GPU`
 
 ### 🩺 PsoriScan AI &nbsp;·&nbsp; [Live Demo](https://huggingface.co/spaces/MFH-001/PsoriScan-AI) &nbsp;·&nbsp; [Repo](https://github.com/mfh-001/PsoriScan-AI)
 Automated psoriasis plaque segmentation and PASI-inspired severity scoring from dermoscopic images. U-Net with EfficientNet-B3 encoder achieves **Dice 0.9479** on validation. Severity classifier takes both visual features and computed coverage % as inputs, designed to mirror how dermatologists actually assess severity. Deployed on Hugging Face Spaces with input validation, heatmap overlay, and a PASI-proxy scoring breakdown.
@@ -22,12 +27,10 @@ Multimodal medical diagnostic tool combining U-Net skin lesion segmentation (Dic
 
 `PyTorch` `Llama 3.2` `PEFT/LoRA` `BitsAndBytes` `Streamlit` `HAM10000`
 
-
 ### 🗺️ Visual SLAM vs GPS &nbsp;·&nbsp; [Repo](https://github.com/mfh-001/ORB-SLAM3-GPS-Comparison)
 Monocular SLAM navigation pipeline comparing ORB-SLAM3 trajectory against mobile GPS ground truth. **26.3 cm mean alignment error** over full test sequences. Camera calibrated with OpenCV chessboard method; Umeyama similarity transformation applied for SLAM-to-UTM coordinate alignment. Full temporal synchronisation via timestamp interpolation.
 
 `ORB-SLAM3` `C++` `OpenCV` `NumPy` `SciPy` `pyproj` `Ubuntu`
-
 
 ### 🤖 Autonomous Vacuum & Air Quality Robot &nbsp;·&nbsp; [Repo](https://github.com/mfh-001/ROS2-Visual-Navigation-Coordinate-Transformation)
 Hardware robot with ultrasonic sensor navigation (95% accuracy across 100 sqm), real-time DHT22 environmental monitoring, mobile app remote control, and ML-based decision logic for zone-targeted cleaning. Data accuracy within ±2%.
@@ -41,6 +44,7 @@ Hardware robot with ultrasonic sensor navigation (95% accuracy across 100 sqm), 
 | Area | Tools |
 |---|---|
 | ML & Computer Vision | PyTorch · TensorFlow · U-Net · EfficientNet · LoRA/PEFT · Image segmentation · Sensor fusion |
+| LLMs & Document AI | Qwen2-VL · Llama 3.2 · ColPali · BitsAndBytes · RAG pipelines · Multi-modal retrieval |
 | Robotics | ROS2 · ORB-SLAM3 · Coordinate transforms · SLAM · Autonomous navigation |
 | Deployment | Streamlit · Hugging Face Spaces · Docker · AWS · Terraform · CI/CD |
 | Infrastructure | TCP/IP · VLANs · VPNs (L2/L3) · MPLS · GPON/FTTH · Cisco · Juniper · SolarWinds |
@@ -50,9 +54,10 @@ Hardware robot with ultrasonic sensor navigation (95% accuracy across 100 sqm), 
 
 ## Background
 
-Before AI, I spent a year as an **Operations Engineer at an ISP**, managing network operations for 10,000+ subscribers across GPON infrastructure, maintaining 99% uptime SLA, and handling escalated Cisco/Juniper configurations and L2/L3 VPN circuits. 
+Before AI, I spent more than a year as an **Operations Engineer at an ISP**, managing network operations for 10,000+ subscribers across GPON infrastructure, maintaining 99% uptime SLA, and handling escalated Cisco/Juniper configurations and L2/L3 VPN circuits.
 
 That infrastructure experience is why I'm drawn to problems where the gap between "works in a notebook" and "works reliably" actually matters.
 
 ---
+
 *Can be contacted at muhammadfahadhassan01@gmail.com*
