@@ -22,6 +22,11 @@ Automated psoriasis plaque segmentation and PASI-inspired severity scoring from 
 
 `PyTorch` `segmentation-models-pytorch` `EfficientNet` `OpenCV` `Streamlit` `ISIC 2018` `HAM10000`
 
+### 🎵 Aether &nbsp;·&nbsp; [Live Demo](https://huggingface.co/spaces/MFH-001/Aether) &nbsp;·&nbsp; [Repo](https://github.com/mfh-001/Aether-Synth)
+Procedural ambient synthesis engine that maps natural language to DSP parameters. A custom keyword tokenizer scores text against 80 acoustic clusters to drive a 12-dimension synthesis vector. The system generates audio via a 5-layer Web Audio graph featuring a 25-oscillator detuned pad stack and procedural convolution reverb. It runs entirely client-side with no model weights or external APIs. It includes a custom 16-bit PCM encoder for faster than real-time offline WAV export.
+
+`Web Audio API` `JavaScript` `DSP` `NLP Tokenization` `Additive Synthesis` `OfflineAudioContext` `HTML5 Canvas`
+
 ### 🔬 MediScan AI &nbsp;·&nbsp; [Live Demo](https://huggingface.co/spaces/MFH-001/MediScan-AI) &nbsp;·&nbsp; [Repo](https://github.com/mfh-001/AI-Medical-Assistant)
 Multimodal medical diagnostic tool combining U-Net skin lesion segmentation (Dice 0.90, Jaccard 0.85) with a RAG-inspired Llama 3.2 3B Instruct conversational layer. Solved catastrophic forgetting during BioGPT fine-tuning by switching to instruction-tuned Llama with a structured medical knowledge base. Deployed with fuzzy query matching for clinical misspelling tolerance.
 
